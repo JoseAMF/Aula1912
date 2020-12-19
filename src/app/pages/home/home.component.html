@@ -1,0 +1,64 @@
+    <app-header></app-header>
+
+    <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+      <h1 class="display-4">Pricing</h1>
+      <p class="lead">Quickly build an effective pricing table for your
+potential customers with this Bootstrap example. It's built with default
+ Bootstrap components and utilities with little customization.</p>
+    </div>
+
+    <div class="container">
+      <div class="row mb-3 text-center">
+        <div class="col-sm-12 col-md-4">
+          <app-price-card
+          [Title]="'Free'"
+          [Price]="'0'"
+          [List]="[
+          '10 users included',
+          '2 GB of storage',
+          'Email support',
+          'Help center access'
+          ]"
+          [ButtonStyle]="'btn-outline-primary'"
+          [ButtonText]="'Sign up for free'"
+          ></app-price-card>
+        </div>
+        <div class="col-sm-12 col-md-4">
+          <app-price-card
+          [Title]="'Pro'"
+          [Price]="'15'"
+          [List]="[
+          '20 users included',
+          '10 GB of storage',
+          'Priority Email support',
+          'Help center access'
+          ]"
+          [ButtonStyle]="'btn-primary'"
+          [ButtonText]="'Get Started'"
+          ></app-price-card>
+        </div>
+        <div class="col-sm-12 col-md-4">
+          <app-price-card
+          [Title]="'Enterprise'"
+          [Price]="'29'"
+          [List]="[
+          '30 users included',
+          '15 GB of storage',
+          'Phone and email support',
+          'Help center access'
+          ]"
+          [ButtonStyle]="'btn-outline-primary'"
+          [ButtonText]="'Get Started'"
+          ></app-price-card>
+        </div>
+
+      </div>
+      <app-footer></app-footer>
+    </div>
+    <script>
+      Holder.addTheme('thumb', {
+        bg: '#55595c',
+        fg: '#eceeef',
+        text: 'Thumbnail'
+      });
+    </script>
